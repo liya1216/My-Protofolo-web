@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <title>Personal protfolio</title>
+    <link rel="stylesheet" type="text/css"href="my.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="my.js" type="text/javascript"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <nav class="menu">
+            <div class="logo"><h2>My<span>Logo</span></h2></div>
+            <ul>
+                <li><a href="index.html" class="active" onclick="markMenuItem(this)">Home</a></li>
+                <li><a href="about.html"onclick="markMenuItem(this)">About</a></li>
+                <li><a href="services.html"onclick="markMenuItem(this)"> Services</a></li>
+                <li><a href="protofolio.html"onclick="markMenuItem(this)">Protfolio</a></li>
+                <li><a href="contact.html"onclick="markMenuItem(this)">Contact</a></li> 
+            </ul>
+            <div id="menuBtn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+           </div>
+            </nav>
+          <main>
+            <section class="infotext">
+                <p>Heloo,Myname is</p>
+                <h1>Liya<span>Geberyohans</span></h1>
+                <p>Web Devaloper</p>
+                <button>Download Rusme</button>
+                <div class="socalmediaicon">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </section>
+          </main>
+         </div>
+         <script type="text/javascript">
+            var menu_btn = document.querySelector('#menuBtn');
+            var menu = document.querySelector('.menu ul');
+           // var menuItems = doucument.querySelector('.menu ul li a');
+
+            menu_btn.addEventListener('click',function(){
+              menu_btn.classList.toggle('active');
+              menu.classList.toggle('active');
+
+            });
+             for(i = 0; i < menuItems.length;i++){
+             menuItems[i].addEventListener('click',function(){
+                 menu_btn.classList.remove('active');
+                 menu.classList.remove('active');
+              })
+            }
+            function markMenuItem(menuItem){
+              for (var i = 0; i < menuItems.length;i++){
+                menuItems[i].classList.remove('active');
+
+              }
+              menuItem.classList.add('active');
+            }
+            
+                      
+         </script>
 </body>
 </html>

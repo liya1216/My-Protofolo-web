@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+
+
+  
+  for (i = 0;  i< menuItems.length; i++){
+    menuItems[i].addEventListener('click',function(){
+      menu_btn.classList.remove('active');
+      menu.classList.remove('active');
+   })
+    }
+    function markMenuItem(menuItem){
+      for (var i = 0; i < menuItems.length;i++){
+        menuItems[i].classList.remove('active');
+
+      }
+      menuItem.classList.add('active');
+<style> 
+#main {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: right;
+}
+
+#main div {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  align-items: right;
+}
+</style>
+</head>
+<body>
+
+<h2>align-items: center</h2>
+
+<div id="main">
+  <div style="background-color:coral;min-height:10px;">RED</div>
+  
+
+
+
+</body>
+</html>
+</body>
+</html>
+var menu = document.querySelector('.menu ul');
+            var menuItems = doucument.querySelectorAll('.menu ul li a');
+            
+            
+            .menu ul.active{
+              right: 0;
+          
+          }
+          .menu ul li{
+            padding: 20px;
+             letter-spacing: 2px;
+      }
+      .menu ul li:nth-child(1){
+       margin-top: 30px;
+      }
+         .container .menu{
+          background-color: #232323;
+      }
+          .container main{
+          background-position: center;
+      }
+        #menuBtn.active .bar:nth-child(2){
+          transform: translateX(-30px);
+          opacity: 0;
+      
+        }
+        #menuBtn.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          }
+      
+        #menuBtn.active .bar:nth-child(3){
+              transform: translateY(-8px) rotate(-45deg);
+              
+      
+      }
+      .menu ul.active{
+          right: 0;
+      
+      }
